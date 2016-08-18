@@ -8,11 +8,20 @@
   "homepage": "https://github.com/scott113341/garage-opener",
   "bugs": "https://github.com/scott113341/garage-opener/issues",
   "main": "lib/index.js",
+  "bin": {
+    "garage-opener": "lib/cli.js"
+  },
   "scripts": {
-    "start": "node index.js"
+    "np": "np",
+    "test": "semistandard"
   },
   "dependencies": {
-    "node-dash-button": "0.5.0",
-    "pi-gpio": "0.0.8"
+    "chip-gpio": "^1.1.0",
+    "node-dash-button": "^0.5.5",
+    "pi-gpio": "^0.0.8"
+  },
+  "devDependencies": {
+    "np": "^2.9.0",
+    "semistandard": "^8.0.0"
   }
 }
