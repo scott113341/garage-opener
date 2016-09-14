@@ -12,13 +12,11 @@
     "garage-opener": "lib/cli.js"
   },
   "scripts": {
-    "np": "np",
     "test": "semistandard"
   },
   "dependencies": {
     "chip-gpio": "^1.1.0",
-    "node-dash-button": "^0.5.5",
-    "pi-gpio": "^0.0.8"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "np": "^2.9.0",
