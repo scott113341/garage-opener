@@ -17,4 +17,7 @@ Garage door opener controlled by Amazon Dash and CHIP.
 
 ```
 ln -s /root/code/garage-opener/config/garage-opener.service /etc/systemd/system/garage-opener.service
+journalctl --unit garage-opener.service -n 20 -e
+systemctl daemon-reload
+systemctl restart garage-opener.service
 ```
